@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8342076C22128375008104AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342076B22128375008104AF /* AppDelegate.swift */; };
 		8342076E22128375008104AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8342076D22128375008104AF /* ViewController.swift */; };
-		8342077122128375008104AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8342076F22128375008104AF /* Main.storyboard */; };
 		8342077322128377008104AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8342077222128377008104AF /* Assets.xcassets */; };
 		8342077622128377008104AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8342077422128377008104AF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		8342076822128375008104AF /* DarkSkyWeatherApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkSkyWeatherApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8342076B22128375008104AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8342076D22128375008104AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8342077022128375008104AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8342077222128377008104AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8342077522128377008104AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8342077722128377008104AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,14 +52,46 @@
 		8342076A22128375008104AF /* DarkSkyWeatherApi */ = {
 			isa = PBXGroup;
 			children = (
-				8342076B22128375008104AF /* AppDelegate.swift */,
-				8342076D22128375008104AF /* ViewController.swift */,
-				8342076F22128375008104AF /* Main.storyboard */,
-				8342077222128377008104AF /* Assets.xcassets */,
-				8342077422128377008104AF /* LaunchScreen.storyboard */,
-				8342077722128377008104AF /* Info.plist */,
+				8342078122128539008104AF /* SupportingFiles */,
+				834207802212852A008104AF /* Model */,
+				8342077F22128522008104AF /* View */,
+				8342077D22128392008104AF /* Controller */,
 			);
 			path = DarkSkyWeatherApi;
+			sourceTree = "<group>";
+		};
+		8342077D22128392008104AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8342076D22128375008104AF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8342077F22128522008104AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		834207802212852A008104AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		8342078122128539008104AF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8342077722128377008104AF /* Info.plist */,
+				8342077422128377008104AF /* LaunchScreen.storyboard */,
+				8342077222128377008104AF /* Assets.xcassets */,
+				8342076B22128375008104AF /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +154,6 @@
 			files = (
 				8342077622128377008104AF /* LaunchScreen.storyboard in Resources */,
 				8342077322128377008104AF /* Assets.xcassets in Resources */,
-				8342077122128375008104AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,14 +172,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8342076F22128375008104AF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8342077022128375008104AF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8342077422128377008104AF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,7 +305,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V8KD896B9;
-				INFOPLIST_FILE = DarkSkyWeatherApi/Info.plist;
+				INFOPLIST_FILE = DarkSkyWeatherApi/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +323,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V8KD896B9;
-				INFOPLIST_FILE = DarkSkyWeatherApi/Info.plist;
+				INFOPLIST_FILE = DarkSkyWeatherApi/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
