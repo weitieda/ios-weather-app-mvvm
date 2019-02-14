@@ -72,12 +72,12 @@
 		8342076A22128375008104AF /* DarkSkyWeatherApi */ = {
 			isa = PBXGroup;
 			children = (
+				8397CF1A22155D7F00779B92 /* Models */,
 				8397CF152215189800779B92 /* ViewModel */,
 				8342078E22129564008104AF /* Util */,
 				8342078B22128D0A008104AF /* Config */,
 				8342078422128C89008104AF /* Manager */,
 				8342078122128539008104AF /* SupportingFiles */,
-				834207802212852A008104AF /* Model */,
 				8342077D22128392008104AF /* Controller */,
 			);
 			path = DarkSkyWeatherApi;
@@ -91,16 +91,6 @@
 				834207932213AD9C008104AF /* WeatherViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		834207802212852A008104AF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8342078722128CCC008104AF /* Location.swift */,
-				8342078922128CDD008104AF /* WeatherData.swift */,
-			);
-			name = Model;
-			path = "New Group1";
 			sourceTree = "<group>";
 		};
 		8342078122128539008104AF /* SupportingFiles */ = {
@@ -146,6 +136,15 @@
 				8397CF16221518FB00779B92 /* CurrentWeatherViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8397CF1A22155D7F00779B92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8342078922128CDD008104AF /* WeatherData.swift */,
+				8342078722128CCC008104AF /* Location.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
