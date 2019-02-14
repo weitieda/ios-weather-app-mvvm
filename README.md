@@ -2,6 +2,7 @@
 
 An iOS app with MVVM pattern and RxSwift
 
+
 Key Points:
 1. Get user current geolocation by CoreLocation (request for GeoLocation permission)
 2. Http request to Dark Sky weather api to get user current location's weather forcast info
