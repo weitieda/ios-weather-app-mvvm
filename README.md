@@ -1,4 +1,4 @@
-# weather-app-mvvm
+# weather-app-mvvm (in progress)
 
 An iOS app with MVVM pattern and RxSwift
 
