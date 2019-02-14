@@ -78,7 +78,6 @@
 				8342078422128C89008104AF /* Manager */,
 				8342078122128539008104AF /* SupportingFiles */,
 				834207802212852A008104AF /* Model */,
-				8342077F22128522008104AF /* View */,
 				8342077D22128392008104AF /* Controller */,
 			);
 			path = DarkSkyWeatherApi;
@@ -92,13 +91,6 @@
 				834207932213AD9C008104AF /* WeatherViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		8342077F22128522008104AF /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		834207802212852A008104AF /* Model */ = {
