@@ -72,7 +72,7 @@
 				8342078B22128D0A008104AF /* Config */,
 				8342078422128C89008104AF /* Manager */,
 				8342078122128539008104AF /* SupportingFiles */,
-				834207802212852A008104AF /* Model */,
+				834207802212852A008104AF /* Models */,
 				8342077F22128522008104AF /* View */,
 				8342077D22128392008104AF /* Controller */,
 			);
@@ -96,13 +96,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		834207802212852A008104AF /* Model */ = {
+		834207802212852A008104AF /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				8342078722128CCC008104AF /* Location.swift */,
 				8342078922128CDD008104AF /* WeatherData.swift */,
 			);
-			name = Model;
+			name = Models;
 			path = "New Group1";
 			sourceTree = "<group>";
 		};
