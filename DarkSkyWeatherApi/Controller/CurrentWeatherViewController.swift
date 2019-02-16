@@ -97,7 +97,6 @@ class CurrentWeatherViewController: WeatherViewController {
         summaryLabel.text = vm.summary
         dateLabel.text = vm.date
     }
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -138,7 +137,5 @@ class CurrentWeatherViewController: WeatherViewController {
         dateLabel.centerX(in: view)
         dateLabel.anchor(top: summaryLabel.bottomAnchor, leading: nil, bottom: nil, trailing: nil)
         
-        
     }
-    
 }

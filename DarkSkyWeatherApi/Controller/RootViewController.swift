@@ -15,7 +15,6 @@ class RootViewController: UIViewController {
     
     let topContainer = UIView()
     
-    
     let bottomContainer: UIView = {
         let v = UIView()
         v.backgroundColor = .blue
@@ -29,8 +28,6 @@ class RootViewController: UIViewController {
         
         return manager
     }()
-    
-
     
     private var currentLocation: CLLocation? {
         didSet {
@@ -123,7 +120,6 @@ class RootViewController: UIViewController {
         view.addSubview(bottomContainer)
         bottomContainer.anchor(top: topContainer.bottomAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: spacing, left: 0, bottom: 0, right: 0))
     }
-
 }
 
 extension RootViewController: CLLocationManagerDelegate {
