@@ -69,13 +69,7 @@ class CurrentWeatherViewController: WeatherViewController {
     
     let dateLabel = UILabel()
     
-    var now: WeatherData? {
-        didSet {
-            DispatchQueue.main.async { self.updateView() }
-        }
-    }
-    
-    var location: Location? {
+    var viewModel: CurrentWeatherViewModel? {
         didSet {
             DispatchQueue.main.async { self.updateView() }
         }
@@ -84,42 +78,24 @@ class CurrentWeatherViewController: WeatherViewController {
     func updateView() {
         activityIndicatorView.stopAnimating()
         
-        if let now = now, let location = location {
-            updateWeatherContainer(with: now, at: location)
+        if let vm = viewModel, vm.isUpdateReady {
+            updateWeatherContainer(with: vm)
         } else {
             loadingFailedLabel.isHidden = false
             loadingFailedLabel.text = "Fetch weather/location failed."
         }
     }
     
-    func updateWeatherContainer(with data: WeatherData, at location: Location) {
+    func updateWeatherContainer(with vm: CurrentWeatherViewModel) {
         weatherContainerView.isHidden = false
         loadingFailedLabel.isHidden = true
-        // 1. Set location
-        locationLabel.text = location.name
-
-        // 2. Format and set temperature
-        temperatureLabel.text = String(
-            format: "%.1f °C",
-            data.currently.temperature.toCelcius())
-
-        // 3. Set weather icon
-        weatherIcon.image = weatherIcon(
-            of: data.currently.icon)
-
-        // 4. Format and set humidity
-        humidityLabel.text = String(
-            format: "%.1f %%",
-            data.currently.humidity * 100)
-
-        // 5. Set weather summary
-        summaryLabel.text = data.currently.summary
-
-        // 6. Format and set datetime
-        let formatter = DateFormatter()
-        formatter.dateFormat = "E, dd MMMM, yyyy"
-        dateLabel.text = formatter.string(
-            from: data.currently.time)
+        
+        locationLabel.text = vm.city
+        temperatureLabel.text = vm.temperature
+        weatherIcon.image = vm.weatherIcon
+        humidityLabel.text = vm.humidity
+        summaryLabel.text = vm.summary
+        dateLabel.text = vm.date
     }
     
 
@@ -165,10 +141,4 @@ class CurrentWeatherViewController: WeatherViewController {
         
     }
     
-}
-
-extension Double {
-    func toCelcius() -> Double {
-        return (self - 32.0) / 1.8
-    }
 }

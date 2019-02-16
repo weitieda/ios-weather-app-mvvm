@@ -12,7 +12,9 @@ import CoreLocation
 class RootViewController: UIViewController {
 
     let currentWeatherViewController = CurrentWeatherViewController()
+    
     let topContainer = UIView()
+    
     
     let bottomContainer: UIView = {
         let v = UIView()
@@ -50,7 +52,7 @@ class RootViewController: UIViewController {
             }
             else if let response = response {
                 // Nofity CurrentWeatherViewController
-                self.currentWeatherViewController.now = response
+                self.currentWeatherViewController.viewModel?.weather = response
             }
         })
     }
@@ -69,7 +71,7 @@ class RootViewController: UIViewController {
                     name: city,
                     latitude: currentLocation.coordinate.latitude,
                     longitude: currentLocation.coordinate.longitude)
-                self.currentWeatherViewController.location = l
+                self.currentWeatherViewController.viewModel?.location = l
             }
         })
     }
@@ -77,9 +79,11 @@ class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
         setupViews()
         setupActiveNotification()
+        
+        currentWeatherViewController.delegate = self
+        currentWeatherViewController.viewModel = CurrentWeatherViewModel()
     }
     
     private func setupActiveNotification() {
@@ -100,8 +104,7 @@ class RootViewController: UIViewController {
         
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             locationManager.requestLocation()
-        }
-        else {
+        } else {
             locationManager.requestWhenInUseAuthorization()
         }
     }
@@ -115,7 +118,7 @@ class RootViewController: UIViewController {
         topContainer.heightAnchor.constraint(equalToConstant: (view.frame.height - spacing) / 3).isActive = true
         topContainer.addSubview(currentWeatherViewController.view)
         currentWeatherViewController.view.fillSuperview()
-        currentWeatherViewController.delegate = self
+
         
         view.addSubview(bottomContainer)
         bottomContainer.anchor(top: topContainer.bottomAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: spacing, left: 0, bottom: 0, right: 0))
@@ -128,7 +131,6 @@ extension RootViewController: CLLocationManagerDelegate {
         if let location = locations.first {
             currentLocation = location
             manager.delegate = nil
-            
             manager.stopUpdatingLocation()
         }
     }

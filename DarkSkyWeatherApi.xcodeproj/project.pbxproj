@@ -21,6 +21,7 @@
 		834207962213BDB5008104AF /* Extention+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834207952213BDB4008104AF /* Extention+URLSession.swift */; };
 		8397CF17221518FB00779B92 /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397CF16221518FB00779B92 /* CurrentWeatherViewModel.swift */; };
 		8397CF192215198600779B92 /* Extention+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397CF182215198600779B92 /* Extention+UIImage.swift */; };
+		8397CF1C2217AA3600779B92 /* Extention+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397CF1B2217AA3600779B92 /* Extention+Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		834207952213BDB4008104AF /* Extention+URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+URLSession.swift"; sourceTree = "<group>"; };
 		8397CF16221518FB00779B92 /* CurrentWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewModel.swift; sourceTree = "<group>"; };
 		8397CF182215198600779B92 /* Extention+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+UIImage.swift"; sourceTree = "<group>"; };
+		8397CF1B2217AA3600779B92 /* Extention+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+Double.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				8342078F22129570008104AF /* Extention+UIView.swift */,
 				834207952213BDB4008104AF /* Extention+URLSession.swift */,
 				8397CF182215198600779B92 /* Extention+UIImage.swift */,
+				8397CF1B2217AA3600779B92 /* Extention+Double.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8397CF1C2217AA3600779B92 /* Extention+Double.swift in Sources */,
 				8342078622128CA0008104AF /* WeatherDataManager.swift in Sources */,
 				834207942213AD9C008104AF /* WeatherViewController.swift in Sources */,
 				8342078A22128CDD008104AF /* WeatherData.swift in Sources */,
