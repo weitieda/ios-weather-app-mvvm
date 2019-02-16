@@ -21,7 +21,6 @@ class WeatherViewController: UIViewController {
     
     let activityIndicatorView = UIActivityIndicatorView()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
