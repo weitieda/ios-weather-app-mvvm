@@ -164,13 +164,37 @@
 		839AE4202219E832000E7B17 /* WeatherViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				839AE429221A0061000E7B17 /* BaseWeatherViewController */,
+				839AE428221A003F000E7B17 /* CurrentWeatherController */,
+				839AE427221A0025000E7B17 /* WeeklyForecastController */,
 				8397CF152215189800779B92 /* ViewModel */,
-				834207912212A0DC008104AF /* CurrentWeatherViewController.swift */,
-				834207932213AD9C008104AF /* WeatherViewController.swift */,
+			);
+			path = WeatherViewControllers;
+			sourceTree = "<group>";
+		};
+		839AE427221A0025000E7B17 /* WeeklyForecastController */ = {
+			isa = PBXGroup;
+			children = (
 				8397CF1D2218541B00779B92 /* WeeklyForecastController.swift */,
 				839AE4212219E869000E7B17 /* WeeklyForecastCell.swift */,
 			);
-			path = WeatherViewControllers;
+			path = WeeklyForecastController;
+			sourceTree = "<group>";
+		};
+		839AE428221A003F000E7B17 /* CurrentWeatherController */ = {
+			isa = PBXGroup;
+			children = (
+				834207912212A0DC008104AF /* CurrentWeatherViewController.swift */,
+			);
+			path = CurrentWeatherController;
+			sourceTree = "<group>";
+		};
+		839AE429221A0061000E7B17 /* BaseWeatherViewController */ = {
+			isa = PBXGroup;
+			children = (
+				834207932213AD9C008104AF /* WeatherViewController.swift */,
+			);
+			path = BaseWeatherViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
