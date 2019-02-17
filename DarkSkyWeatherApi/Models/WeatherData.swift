@@ -12,6 +12,7 @@ struct WeatherData: Codable {
     let latitude: Double
     let longitude: Double
     let currently: CurrentWeather
+    let daily: WeeklyWeatherData
     
     struct CurrentWeather: Codable {
         let time: Date
@@ -20,4 +21,9 @@ struct WeatherData: Codable {
         let temperature: Double
         let humidity: Double
     }
+    
+    struct WeeklyWeatherData: Codable {
+        let data: [ForecastData]
+    }
 }
+

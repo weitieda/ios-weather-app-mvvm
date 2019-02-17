@@ -13,6 +13,8 @@ class RootViewController: UIViewController {
 
     let currentWeatherViewController = CurrentWeatherViewController()
     
+    let weeklyForecastController = WeeklyForecastController()
+    
     let topContainer = UIView()
     
     let bottomContainer: UIView = {
@@ -46,10 +48,10 @@ class RootViewController: UIViewController {
             response, error in
             if let error = error {
                 dump(error)
-            }
-            else if let response = response {
+            } else if let response = response {
                 // Nofity CurrentWeatherViewController
                 self.currentWeatherViewController.viewModel?.weather = response
+                self.weeklyForecastController.viewModel = WeeklyWeatherViewModel(weatherData: response.daily.data)
             }
         })
     }
@@ -119,6 +121,8 @@ class RootViewController: UIViewController {
         
         view.addSubview(bottomContainer)
         bottomContainer.anchor(top: topContainer.bottomAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: spacing, left: 0, bottom: 0, right: 0))
+        bottomContainer.addSubview(weeklyForecastController.view)
+        weeklyForecastController.view.fillSuperview()
     }
 }
 
