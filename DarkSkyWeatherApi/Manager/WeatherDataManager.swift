@@ -16,13 +16,12 @@ enum DataManagerError: Error {
 
 final class WeatherDataManager {
     internal let baseURL: URL
-    internal let urlSession: URLSessionProtocol
-    internal init(baseURL: URL, urlSession: URLSessionProtocol) {
-        self.baseURL = baseURL
-        self.urlSession = urlSession
-    }
     
-    static let shared = WeatherDataManager(baseURL: API.authenticatedURL, urlSession: URLSession.shared)
+    internal init(baseURL: URL) {
+        self.baseURL = baseURL
+    }
+
+    static let shared = WeatherDataManager(baseURL: API.authenticatedURL)
     
     typealias CompletionHandler = (WeatherData?, DataManagerError?) -> Void
     
@@ -33,9 +32,8 @@ final class WeatherDataManager {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpMethod = "GET"
         
-        self.urlSession.dataTask(with: request, completionHandler: {
+        URLSession.shared.dataTask(with: request, completionHandler: {
             (data, response, error) in
-            
             self.didFinishGettingWeatherData(data: data, response: response, error: error, completion: completion)
         }).resume()
     }
@@ -43,24 +41,20 @@ final class WeatherDataManager {
     func didFinishGettingWeatherData(data: Data?, response: URLResponse?, error: Error?, completion: CompletionHandler) {
         if let _ = error {
             completion(nil, .failedRequest)
-        }
-        else if let data = data, let response = response as? HTTPURLResponse {
+        } else if let data = data, let response = response as? HTTPURLResponse {
             if response.statusCode == 200 {
                 do {
                     let decoder = JSONDecoder()
                     decoder.dateDecodingStrategy = .secondsSince1970
                     let weatherData = try decoder.decode(WeatherData.self, from: data)
                     completion(weatherData, nil)
-                }
-                catch {
+                } catch {
                     completion(nil, .invalidResponse)
                 }
-            }
-            else {
+            } else {
                 completion(nil, .failedRequest)
             }
-        }
-        else {
+        } else {
             completion(nil, .unknown)
         }
     }
