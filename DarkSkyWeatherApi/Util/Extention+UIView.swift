@@ -9,22 +9,6 @@
 import UIKit
 
 extension UIColor {
-    
-    static func mainPink() -> UIColor {
-        return UIColor(hexFromString: "#F96B52")
-    }
-    
-    static func mainBlue() -> UIColor {
-        return UIColor.rgb(red: 55, green: 120, blue: 250)
-    }
-    
-    static func directionsGreen() -> UIColor {
-        return UIColor.rgb(red: 76, green: 217, blue: 100)
-    }
-    
-}
-
-extension UIColor {
     convenience init(hexFromString:String, alpha:CGFloat = 1.0) {
         var cString:String = hexFromString.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         var rgbValue:UInt32 = 10066329 //color #999999 if string has wrong format
@@ -140,5 +124,4 @@ extension UIView {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
-    
 }
