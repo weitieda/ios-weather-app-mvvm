@@ -3,7 +3,7 @@
 An iOS weather app with MVVM pattern
 
 
-Key Points:
+Key features:
 1. Get user current geolocation by `CoreLocation` (request for GeoLocation permission)
 2. Http `GET` request to Dark Sky weather api to get user current location's weather forcast info
 3. `JSON` parcing
