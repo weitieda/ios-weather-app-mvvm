@@ -26,6 +26,7 @@
 		839AE4222219E869000E7B17 /* WeeklyForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839AE4212219E869000E7B17 /* WeeklyForecastCell.swift */; };
 		839AE4242219EC7E000E7B17 /* ForecastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839AE4232219EC7E000E7B17 /* ForecastData.swift */; };
 		839AE4262219ED61000E7B17 /* WeeklyWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839AE4252219ED61000E7B17 /* WeeklyWeatherViewModel.swift */; };
+		839AE42B221A7813000E7B17 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839AE42A221A7813000E7B17 /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		839AE4212219E869000E7B17 /* WeeklyForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyForecastCell.swift; sourceTree = "<group>"; };
 		839AE4232219EC7E000E7B17 /* ForecastData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastData.swift; sourceTree = "<group>"; };
 		839AE4252219ED61000E7B17 /* WeeklyWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeatherViewModel.swift; sourceTree = "<group>"; };
+		839AE42A221A7813000E7B17 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				8342078F22129570008104AF /* Extention+UIView.swift */,
 				8397CF182215198600779B92 /* Extention+UIImage.swift */,
 				8397CF1B2217AA3600779B92 /* Extention+Double.swift */,
+				839AE42A221A7813000E7B17 /* UserDefaults.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				834207922212A0DC008104AF /* CurrentWeatherViewController.swift in Sources */,
 				839AE4262219ED61000E7B17 /* WeeklyWeatherViewModel.swift in Sources */,
 				8342078D22128D22008104AF /* Config.swift in Sources */,
+				839AE42B221A7813000E7B17 /* UserDefaults.swift in Sources */,
 				8397CF20221961E000779B92 /* Key.swift in Sources */,
 				8342079022129570008104AF /* Extention+UIView.swift in Sources */,
 				8397CF17221518FB00779B92 /* CurrentWeatherViewModel.swift in Sources */,
