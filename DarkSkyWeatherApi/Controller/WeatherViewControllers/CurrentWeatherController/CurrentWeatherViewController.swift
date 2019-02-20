@@ -136,8 +136,5 @@ class CurrentWeatherViewController: WeatherViewController {
         view.addSubview(dateLabel)
         dateLabel.centerX(in: view)
         dateLabel.anchor(top: summaryLabel.bottomAnchor, leading: nil, bottom: nil, trailing: nil)
-        
-        
-        
     }
 }

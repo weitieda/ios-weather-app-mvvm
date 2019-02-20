@@ -46,7 +46,7 @@ struct WeeklyWeatherViewModel {
     }
     
     func humidity(for index: Int) -> String {
-        return String(format: "%.0f %%", weatherData[index].humidity)
+        return String(format: "%.0f %%", weatherData[index].humidity * 100)
     }
     
     var numberOfSections: Int {

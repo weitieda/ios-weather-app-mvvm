@@ -153,8 +153,16 @@ extension RootViewController: CurrentWeatherViewControllerDelegate {
     
     func settingsButtonPressed(controller: CurrentWeatherViewController) {
         let vc = SettingsController.init(style: .grouped)
+        vc.delegate = self
         let nav = UINavigationController(rootViewController: vc)
         self.present(nav, animated: true, completion: nil)
+    }
+}
+
+extension RootViewController: SettingsControllerDelegate {
+    func settingsDidChange() {
+        currentWeatherViewController.updateView()
+        weeklyForecastController.updateView()
     }
 }
 

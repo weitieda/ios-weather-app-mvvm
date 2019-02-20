@@ -99,8 +99,9 @@
 		8342077D22128392008104AF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				839AE43D221CE681000E7B17 /* RootViewController */,
+				839AE42C221A8233000E7B17 /* SettingsController */,
 				839AE4202219E832000E7B17 /* WeatherViewControllers */,
-				8342076D22128375008104AF /* RootViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,7 +167,6 @@
 		839AE4202219E832000E7B17 /* WeatherViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				839AE42C221A8233000E7B17 /* SettingsController */,
 				839AE429221A0061000E7B17 /* BaseWeatherViewController */,
 				839AE428221A003F000E7B17 /* CurrentWeatherController */,
 				839AE427221A0025000E7B17 /* WeeklyForecastController */,
@@ -206,6 +206,14 @@
 				839AE42D221A825D000E7B17 /* SettingsController.swift */,
 			);
 			path = SettingsController;
+			sourceTree = "<group>";
+		};
+		839AE43D221CE681000E7B17 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8342076D22128375008104AF /* RootViewController.swift */,
+			);
+			path = RootViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

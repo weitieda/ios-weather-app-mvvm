@@ -43,7 +43,7 @@ struct CurrentWeatherViewModel {
         
         switch UserDefaults.getTemperatureMode() {
         case .fahrenheit:
-            return String(format: "%.1f", value)
+            return String(format: "%.1f °F", value)
         case .celsius:
             return String(format: "%.1f °C", value.toCelsius())
         }
