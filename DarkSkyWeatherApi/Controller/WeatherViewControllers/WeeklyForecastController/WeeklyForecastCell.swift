@@ -12,6 +12,8 @@ class WeeklyForecastCell: UITableViewCell {
 
     let weekLabel: UILabel = {
         let l = UILabel()
+        l.textColor = #colorLiteral(red: 0.9149611592, green: 0.2951304317, blue: 0.2124379277, alpha: 1)
+        l.font = UIFont.preferredFont(forTextStyle: .title3)
         return l
     }()
     

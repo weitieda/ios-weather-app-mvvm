@@ -9,6 +9,7 @@
 import UIKit
 
 struct WeeklyWeatherViewModel {
+    
     let weatherData: [ForecastData]
     
     private let dateFormatter = DateFormatter()
@@ -21,8 +22,7 @@ struct WeeklyWeatherViewModel {
     
     func date(for index: Int) -> String {
         dateFormatter.dateFormat = "MMMM d"
-        return dateFormatter.string(
-            from: weatherData[index].time)
+        return dateFormatter.string(from: weatherData[index].time)
     }
     
     func temperature(for index: Int) -> String {
