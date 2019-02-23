@@ -10,3 +10,13 @@
 1. `UITableView` with customized cell
 1. Saved user's setting by `UserDefault`
 1. Encapsulated network layer
+
+## Installation
+Clone or download the project, navigate to `Config` folder, create a file `Key.swift`, then build. You're good to go.
+```
+import Foundation
+
+enum Key: String {
+    case weatherApiKey = "YOUR_DARK_SKY_API_KEY"
+}
+```
