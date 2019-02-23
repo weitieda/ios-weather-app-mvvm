@@ -1,6 +1,6 @@
 # weather-app-mvvm (under development)
 
-### An iOS weather app with MVVM pattern
+### An iOS weather app with MVVM architecture
 
 ## Features
 1. Get user current geolocation by `CoreLocation` (request for GeoLocation permission)
