@@ -4,7 +4,7 @@
 
 ## Features
 1. Get user current geolocation by `CoreLocation` (request for GeoLocation permission)
-1. Http `GET` request to Dark Sky weather api, and `JSON` parsing by `Decodable`
+1. HTTP `GET` request to Dark Sky weather api, and `JSON` parsing by `Decodable`
 1. Implemented Delegation, Singleton and Observer Pattern
 1. `Auto Layout` UI programtically
 1. `UITableView` with customized cell
