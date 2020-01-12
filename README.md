@@ -1,5 +1,5 @@
 # Dark Sky Weather App
-### An iOS weather app with MVVM architecture
+###### An iOS weather app with MVVM architecture
 
 ## Features
 1. Get user current geolocation by `CoreLocation` (request for GeoLocation permission)
