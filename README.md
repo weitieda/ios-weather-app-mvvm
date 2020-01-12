@@ -1,5 +1,4 @@
-# weather-app-mvvm (under development)
-
+# Dark Sky Weather App
 ### An iOS weather app with MVVM architecture
 
 ## Features
@@ -10,6 +9,9 @@
 1. `UITableView` with customized cell
 1. Saved user's setting by `UserDefault`
 1. Encapsulated network layer
+
+## Preview
+![today](preview/today.GIF)
 
 ## Installation
 Clone or download the project, navigate to `Config` folder, create a file `Key.swift`, then build. You're good to go.
