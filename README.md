@@ -11,7 +11,7 @@
 1. Encapsulated network layer
 
 ## Preview
-![preiview](preview/preview.GIF)
+![preiview](preview/preview.gif)
 
 ## Installation
 Clone or download the project, navigate to `Config` folder, create a file `Key.swift`, then build. You're good to go.
