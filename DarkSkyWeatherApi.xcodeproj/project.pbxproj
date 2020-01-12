@@ -22,7 +22,6 @@
 		8397CF192215198600779B92 /* Extention+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397CF182215198600779B92 /* Extention+UIImage.swift */; };
 		8397CF1C2217AA3600779B92 /* Extention+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397CF1B2217AA3600779B92 /* Extention+Double.swift */; };
 		8397CF1E2218541B00779B92 /* WeeklyForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397CF1D2218541B00779B92 /* WeeklyForecastController.swift */; };
-		8397CF20221961E000779B92 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397CF1F221961E000779B92 /* Key.swift */; };
 		839AE4222219E869000E7B17 /* WeeklyForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839AE4212219E869000E7B17 /* WeeklyForecastCell.swift */; };
 		839AE4242219EC7E000E7B17 /* ForecastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839AE4232219EC7E000E7B17 /* ForecastData.swift */; };
 		839AE4262219ED61000E7B17 /* WeeklyWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839AE4252219ED61000E7B17 /* WeeklyWeatherViewModel.swift */; };
@@ -48,7 +47,6 @@
 		8397CF182215198600779B92 /* Extention+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+UIImage.swift"; sourceTree = "<group>"; };
 		8397CF1B2217AA3600779B92 /* Extention+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extention+Double.swift"; sourceTree = "<group>"; };
 		8397CF1D2218541B00779B92 /* WeeklyForecastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyForecastController.swift; sourceTree = "<group>"; };
-		8397CF1F221961E000779B92 /* Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
 		839AE4212219E869000E7B17 /* WeeklyForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyForecastCell.swift; sourceTree = "<group>"; };
 		839AE4232219EC7E000E7B17 /* ForecastData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastData.swift; sourceTree = "<group>"; };
 		839AE4252219ED61000E7B17 /* WeeklyWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyWeatherViewModel.swift; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				8342078C22128D22008104AF /* Config.swift */,
-				8397CF1F221961E000779B92 /* Key.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -248,6 +245,7 @@
 				TargetAttributes = {
 					8342076722128375008104AF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -302,7 +300,6 @@
 				8342078D22128D22008104AF /* Config.swift in Sources */,
 				839AE42B221A7813000E7B17 /* UserDefaults.swift in Sources */,
 				839AE42E221A825D000E7B17 /* SettingsController.swift in Sources */,
-				8397CF20221961E000779B92 /* Key.swift in Sources */,
 				8342079022129570008104AF /* Extention+UIView.swift in Sources */,
 				8397CF17221518FB00779B92 /* CurrentWeatherViewModel.swift in Sources */,
 			);
@@ -443,7 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7V8KD896B9;
+				DEVELOPMENT_TEAM = T64RAU2S7P;
 				INFOPLIST_FILE = DarkSkyWeatherApi/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,7 +448,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiedawei.DarkSkyWeatherApi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -461,7 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7V8KD896B9;
+				DEVELOPMENT_TEAM = T64RAU2S7P;
 				INFOPLIST_FILE = DarkSkyWeatherApi/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,7 +466,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiedawei.DarkSkyWeatherApi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

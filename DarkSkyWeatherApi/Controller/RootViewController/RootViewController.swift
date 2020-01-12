@@ -78,6 +78,7 @@ class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .black
         setupViews()
         setupActiveNotification()
         
@@ -109,7 +110,7 @@ class RootViewController: UIViewController {
     }
     
     fileprivate func setupViews() {
-        view.backgroundColor = .white
+        view.backgroundColor = .black
         
         view.addSubview(topContainer)
         let spacing: CGFloat = 12
